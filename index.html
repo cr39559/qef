@@ -3,149 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="javascript/menu.js"></script>
-    <script src="javascript/solutions.js"></script>
-    <script src="javascript/banner.js"></script>
-    <title>Queenepoxyfloors | Home</title>
+    <title>Home</title>
 </head>
 <body>
 
-    <!--Menu-->
-
-    <nav class="menu">
-        <ul class="menu--mobile">
-            <li class="menu--close" onclick="closeMenu()">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="24" viewBox="0 -960 960 960" width="24">
-                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                    </svg>
-                </a>
-            </li>
-            <li class="menu--mobile--list_item"><a href="index.html" class="menu--mobile--link">Home</a></li>
-            <li class="menu--mobile--list_item"><a href="#" class="menu--mobile--link">Services</a></li>
-            <li class="menu--mobile--list_item"><a href="#" class="menu--mobile--link">Products</a></li>
-            <li class="menu--mobile--list_item"><a href="#" class="menu--mobile--link">Gallery</a></li>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg fill="#dd0000" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Systems</a></li>
         </ul>
 
-        <ul class="menu--desktop">
-            <li class="menu--logo">
-                <a href="index.html">
-                    <img class="logo" src="images/logo.png" alt="logo">
-                </a>
-            </li>
-            <li class="menu--desktop--list_item"><a href="index.html" class="menu--desktop--link">Home</a></li>
-            <li class="menu--desktop--list_item"><a href="#" class="menu--desktop--link">Services</a></li>
-            <li class="menu--desktop--list_item"><a href="#" class="menu--desktop--link">Products</a></li>
-            <li class="menu--desktop--list_item"><a href="#" class="menu--desktop--link">Gallery</a></li>
-            <li class="menu--open" onclick="openMenu()">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="24" viewBox="0 -960 960 960" width="24">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                    </svg>
-                </a>
-            </li>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Services</a></li>
+            <li class="hideOnMobile"><a href="#">Gallery</a></li>
+            <li class="hideOnMobile"><a href="#">Warranty</a></li>
+            <li><a href="#" class="hideOnMobile">Systems</a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#"><svg fill="#dd0000" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
 
-    <!--End of Menu-->
-
-    <!--Banner-->
-
-    <section class="banner">
-        <div class="banner--content">
-            <h1 class="banner--title">Queenepoxyfloors</h1>
-            <p class="banner--text">
-                Home of the best floors in Texas.
+    <section class="top">
+        <article>
+            <h2>Welcome!</h2>
+            <h1>Your next PC starts Here</h1>
+            <div class="underline-decoration"></div>
+            <p>
+                Explore hand crafted <span>PC</span> solutions at an <span>affordable</span> price without hassle.
             </p>
-            <br>
-            <p class="banner--text">
-                Ready to transform your surfaces? Contact us below!
-            </p>
-            <button class="banner--button" onclick="location.href='tel:+number'">Contact</button>
-            <div class="banner--social_media_links">
-                <a href="https://www.facebook.com/queenepoxyfloors" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/queenepoxyfloors" class="fa fa-instagram"></a>
-            </div>
-        </div>
+            <a href="#"><button class="cta">See Listings</button></a>
+        </article>
     </section>
 
-    <!--End of Banner-->
-
-    <!--About Us-->
-
-    <section class="about_us">
-        <div class="about_us--content">
-            <h1 class="about_us--title">Specialized Coating Solutions for Texans</h1>
-            <p class="about_us--text">
-                QueenEpoxyFloors is a small buisness that is fully operated by the owner in order to supervise for quality assurance. At QueenEpoxyFloors, we are commited to providing the best coating solutions at a competitive price, while still maintaining superb quality. We are a small buisness seeking to provide coating solutions to protect and enhance your surfaces. With over 20 years of coating experience, QueenEpoxyFloors is sure to wow you with our services.
+    <section id="page-banner" class="sec">
+        <article>
+            <h1>Your PC, Your Way: Custom Builds with a Personal Touch</h1>
+            <div class="underline-decoration"></div>
+            <p>
+                Welcome to my website! Here, it’s all about crafting a PC that’s as unique as you are. Dive into a world of personalized aesthetics and top-notch customizability. With carefully selected components and a touch of personal flair, you’ll create a machine that not only outperforms the competition for price to performance but looks exactly how you envision it. Let’s build a PC that’s truly yours!
             </p>
-        </div>
-        <img class="about_us--img" src="images/aboutus.PNG">
+        </article>
+        <img src="images/banner-img.jpg">
     </section>
 
-    <!--End of About Us-->
-
-    <!--Solutions-->
-
-    <section class="solutions">
-        <h1 class="solutions--title">Our Solutions</h1>
-        <div class="solutions--cards">
-            <div class="solutions--card">
-                <h1 class="solutions--card_title">Epoxy Coating</h1>
-                <img src="images/epoxy.JPG" class="solutions--card_img">
-            </div>
-            <div class="solutions--card">
-                <h1 class="solutions--card_title">Epoxy & Flake Coating</h1>
-                <img src="images/flake.JPG" class="solutions--card_img">
-            </div>
-            <div class="solutions--card">
-                <h1 class="solutions--card_title">Metallic Coating</h1>
-                <img src="images/metallic.JPG" class="solutions--card_img">
-            </div>
-            <div class="solutions--card">
-                <h1 class="solutions--card_title">Concrete Overlay</h1>
-                <img src="images/overlay.JPG" class="solutions--card_img">
-            </div>
-            <div class="solutions--card">
-                <h1 class="solutions--card_title">Concrete Stain</h1>
-                <img src="images/stain.JPG" class="solutions--card_img">
-            </div>
-        </div>
+    <section id="why-us" class="sec">
+        <article>
+            <h1>Why choose me?</h1>
+            <div class="underline-decoration"></div>
+            <p>
+                Why settle for less when you can have more? My solutions provide exceptional performance at a lower cost than retail, allowing you to stretch your budget further. With a focus on personalized customization, I ensure that your setup not only performs flawlessly but also reflects your personal style and preferences.
+            </p>
+        </article>
     </section>
 
-    <div class="showcase">
-        <img src="" class="showcase--img">
-    </div>
+    <section class="sec-2">
+        <article>
+            <h1>Spend Less</h1>
+            <p>
+                By choosing to work with me, you’re not just getting a personalized computer build; you're also saving money. Unlike retail stores where you often pay a premium for brand names and middlemen, I offer high-quality, cost-effective solutions tailored to your needs. My direct approach eliminates unnecessary markups and focuses on delivering superior performance at a fraction of the cost. Experience top-tier components and exceptional value without breaking the bank.
+            </p>
+        </article>
+        <article>
+            <h1>Get More performance</h1>
+            <p>
+                When you choose to build your PC with me, you’re unlocking the potential for outstanding performance at a lower cost. By focusing on custom solutions and avoiding the markup typically associated with retail prices, I ensure you get the most powerful components for your budget. This approach means you can achieve higher performance levels, whether you're gaming, creating, or working, all while spending less. Experience top-notch performance and cutting-edge technology without the premium price tag—get more from your investment with a tailored PC build that maximizes every dollar.
+            </p>
+        </article>
+        <article>
+            <h1>Personalize to your liking</h1>
+            <p>
+                While performance is key, I understand that aesthetics can also play a role in your PC setup. If you’re not overly concerned with the look of your machine, that’s perfectly fine—we’ll focus on what matters most to you. However, if you have a vision for how your PC should look, I’m here to bring it to life. From sleek and modern designs to vibrant, custom lighting and unique case mods, I can tailor every detail to reflect your personal style. Whether aesthetics are a top priority or just a nice touch, I’ll ensure your build meets your preferences and performs beautifully.
+            </p>
+        </article>
+    </section>
 
-    <!--End of Solutions-->
+    <section class="sec-3">
+        <article>
+            <h1>Whats your style?</h1>
+            <div class="underline-decoration"></div>
+            <p>
+                PC building is all about expressing your personal style and preferences. Choose a design that reflects your taste, and I'll handle the rest. Whether you prioritize high performance or unique aesthetics, I’ll create a custom PC that not only meets your technical needs but also showcases your individual style. Let's build a machine that’s a perfect blend of form and function.
+            </p>
+        </article>
+    </section>
 
-    <!--Testimonials-->
-
-    <!-- <section class="testimonials"></section> -->
-
-    <!--End of Testimonials-->
-
-    <!--Footer-->
-
-    <footer class="footer">
-        <div class="footer--social_media_links">
-            <a href="https://www.facebook.com/queenepoxyfloors" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/queenepoxyfloors" class="fa fa-instagram"></a>
-        </div>
-        <nav>
-            <ul class="footer--menu">
-                <li class="footer--menu--list_item"><a href="#" class="footer--menu--link">Home</a></li>
-                <li class="footer--menu--list_item"><a href="#" class="footer--menu--link">Services</a></li>
-                <li class="footer--menu--list_item"><a href="#" class="footer--menu--link">Products</a></li>
-                <li class="footer--menu--list_item"><a href="#" class="footer--menu--link">Gallery</a></li>
+    <section class="sec-4">
+        <div>
+            <h1>Office</h1>
+            <div class="underline-decoration"></div>
+            <ul>
+                <li>-Reliable, cost-effective for daily users.</li>
+                <li>-Handles emails, spreadsheets, video calls.</li>
+                <li>-Balanced performance, energy-efficient.</li>
+                <li>-Quiet operation, ideal for productivity.</li>
             </ul>
-        </nav>
-        <p class="footer--copyright">Queenepoxyfloors @ 2024</p>
+            <img src="images/banner-img.jpg">
+        </div>
+        <div>
+            <h1>Gaming</h1>
+            <div class="underline-decoration"></div>
+            <ul>
+                <li>-Optimized for high-performance gaming.</li>
+                <li>-Play the latest titles at smooth framerates.</li>
+                <li>-Supports high resolution and graphics.</li>
+                <li>-Perfect for immersive gaming experiences.</li>
+            </ul>
+            <img src="images/banner-img.jpg">
+        </div>
+        <div>
+            <h1>Creator</h1>
+            <div class="underline-decoration"></div>
+            <ul>
+                <li>-Engineered for intensive tasks like 3D rendering, video editing and data science.</li>
+                <li>-Handles complex projects with ease.</li>
+                <li>-Ideal for creative professionals and researchers.</li>
+                <li>-Built for maximum processing power and reliability.</li>
+            </ul>
+            <img src="images/banner-img.jpg">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Warranty</a>
+            <a href="#">Systems</a>
+        </div>
     </footer>
 
-    <!--End of Footer-->
-    
 </body>
 </html>
