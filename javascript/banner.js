@@ -1,10 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
     const images = [
-        '../images/epoxy.jpg',
-        '../images/flake.jpg',
-        '../images/metallic.jpg',
-        '../images/overlay.jpg',
-        '../images/stain.jpg'
+        '../images/epoxy.JPG',
+        '../images/flake.JPG',
+        '../images/metallic.JPG',
+        '../images/overlay.JPG',
+        '../images/stain.JPG'
     ]
 
     let i = 0
